@@ -102,7 +102,38 @@ if(cond) {
 //              break;
 //         }
 
+/* Funktionen */
 
+//1.Kapselung
 
+function test() {  // Fkt,-Rumpf |  body
+    console.log("Testausgabe");
+}
 
+// // 2. return
+// console.log(test2());
+// function test2() {  // do something...
+//     return "Testausgabe 2"; //Lieferung an die stelle des calls
+//     console.log("Noch ein ausgabe"); // nach return Abbruch
+// }
 
+// // 3.Parameter
+// console.log(test3(Robert));   // Argument(e)
+// function test3(firstName) {  // Parameter
+//     // do something....
+//     return "Hallo" + firstName; 
+// }
+ 
+// 4. Fkt-call aus funktionen
+console.log(test4(Robert));
+function test4(firstName) 
+{  // do something...
+    return grussformel() + firstName;
+}
+
+function grussformel() {
+   // return "Hallo,";
+    return "Hola, ";
+}
+
+// return();
